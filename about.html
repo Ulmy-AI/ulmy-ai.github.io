@@ -41,6 +41,8 @@
 
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="/" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Home</a>
+                    <a href="framework.html"
+                        class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Framework</a>
                     <a href="about.html" class="text-sm font-medium text-blue-600">About</a>
                     <a href="contact.html"
                         class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Contact</a>
@@ -62,6 +64,7 @@
         <div class="md:hidden hidden bg-white border-t border-slate-100" id="mobile-menu">
             <div class="px-6 py-4 space-y-4 flex flex-col">
                 <a href="/" class="text-slate-600 font-medium">Home</a>
+                <a href="framework.html" class="text-slate-600 font-medium">Framework</a>
                 <a href="about.html" class="text-blue-600 font-medium">About</a>
                 <a href="contact.html" class="text-slate-600 font-medium">Contact</a>
                 <a href="#" class="text-slate-600 font-medium">Login</a>
@@ -73,74 +76,431 @@
     <header class="pt-32 pb-12 bg-white">
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-5xl font-bold font-display text-slate-900 mb-4 animate-fade-in-up">About Us</h1>
-            <p class="text-slate-500 max-w-2xl mx-auto animate-fade-in-up delay-100">Pioneering the future of business
-                leadership through Artificial Intelligence.</p>
+            <div class="bg-blue-50 border border-blue-100 rounded-2xl p-8 shadow-sm">
+                <p class="text-xl font-medium text-blue-900 bold">
+                    Our mission: <em> Building workplaces where people and AI agents thrive together.</em>
+                </p>
+            </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="py-16">
-        <div class="container mx-auto px-6">
-            <div
-                class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-100 animate-fade-in-up delay-200">
-                <div class="p-8 md:p-12">
-                    <div class="flex flex-col md:flex-row gap-12 items-start">
-                        <div class="flex-1">
-                            <h2 class="text-3xl font-bold font-display text-slate-900 mb-6">Florian Ulmeanu</h2>
-                            <div class="prose prose-lg text-slate-600">
-                                <p class="mb-6">
-                                    I am Florian Ulmeanu, CEO of ULMY AI S.R.L. With over 17 years of experience
-                                    evolving from mechanical engineering to AI programming, I have dedicated my career
-                                    to developing and implementing cutting-edge Generative AI solutions to help
-                                    businesses transition to the AI era.
-                                </p>
-                                <p class="mb-6">
-                                    My mission is to bridge the gap between complex AI technologies and practical
-                                    business applications, empowering leaders to make confident, data-driven decisions.
-                                </p>
-                            </div>
+    <main class="py-16 space-y-24">
 
-                            <div class="mt-8 space-y-4">
-                                <div class="flex items-center text-slate-600">
-                                    <svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                                        </path>
-                                    </svg>
-                                    <a href="mailto:florian.ulmeanu@gmail.com"
-                                        class="hover:text-blue-600 transition">florian.ulmeanu@gmail.com</a>
-                                </div>
-                                <div class="flex items-center text-slate-600">
-                                    <svg class="w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-                                        </path>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                    </svg>
-                                    <span>Cluj-Napoca, Romania</span>
-                                </div>
-                                <div class="flex items-center text-slate-600">
-                                    <svg class="w-5 h-5 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                                        <path
-                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                                    </svg>
-                                    <a href="https://www.linkedin.com/in/florian-ulmeanu/" target="_blank"
-                                        rel="noopener noreferrer" class="hover:text-blue-600 transition">Connect on
-                                        LinkedIn</a>
-                                </div>
-                            </div>
+        <!-- Who We Are Section -->
+        <section class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">Who We Are</h2>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    ULMY AI is a Romanian Generative AI company founded in August 2024, specializing in end-to-end AI
+                    transformation.
+                    We design, build, and deploy production-grade AI agents, multimodal copilots, and automation systems
+                    that integrate seamlessly into your organization.
+                </p>
+            </div>
+
+            <!-- Lifecycle Grid -->
+            <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div
+                    class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition group">
+                    <div
+                        class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4 group-hover:scale-110 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Discovery & Strategy</h3>
+                    <p class="text-sm text-slate-600">Process Mapping & Opportunity Identification</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition group">
+                    <div
+                        class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4 group-hover:scale-110 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Development</h3>
+                    <p class="text-sm text-slate-600">Prototype → MVP → Production Systems</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition group">
+                    <div
+                        class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4 group-hover:scale-110 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Deployment & Support</h3>
+                    <p class="text-sm text-slate-600">Cloud Integration, Monitoring & Optimization</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder Section -->
+        <section class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto bg-slate-900 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
+                <!-- Decorative background elements -->
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full blur-3xl opacity-20 -mr-16 -mt-16">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-64 h-64 bg-indigo-600 rounded-full blur-3xl opacity-20 -ml-16 -mb-16">
+                </div>
+
+                <div class="relative z-10 flex flex-col md:flex-row gap-12 items-start">
+                    <div class="flex-1">
+                        <div
+                            class="inline-block px-4 py-1 bg-blue-600/30 border border-blue-500/30 rounded-full text-blue-300 text-sm font-medium mb-6">
+                            Leadership
                         </div>
-                        <!-- Optional: Add a profile image here if available in the future -->
-                        <!-- <div class="w-full md:w-1/3">
-                            <img src="path/to/image.jpg" alt="Florian Ulmeanu" class="rounded-2xl shadow-lg w-full">
-                        </div> -->
+                        <h2 class="text-3xl font-bold font-display mb-6">Led by a Senior Generative AI Developer</h2>
+                        <p class="text-slate-300 mb-8 text-lg">
+                            ULMY AI was founded by <strong class="text-white">Florian Ulmeanu</strong>, a Generative AI
+                            engineer and Python backend specialist.
+                        </p>
+
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-400 mr-3 mt-1 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-slate-300"><strong>7+ years</strong> of Python backend & cloud
+                                    development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-400 mr-3 mt-1 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-slate-300"><strong>4+ years</strong> building enterprise-grade LLM
+                                    solutions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-400 mr-3 mt-1 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-slate-300">Hands-on experience leading AI automation initiatives long
+                                    before ChatGPT’s public release</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-blue-400 mr-3 mt-1 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-slate-300">Deep technical expertise in multi-agent systems, RAG
+                                    pipelines, orchestration, and AI-powered enterprise workflows</span>
+                            </li>
+                        </ul>
+
+                        <div class="mt-8 pt-8 border-t border-slate-800 flex gap-4">
+                            <a href="https://www.linkedin.com/in/florian-ulmeanu/" target="_blank"
+                                class="text-slate-400 hover:text-white transition flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                                Connect on LinkedIn
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- GenAI Expertise Section -->
+        <section class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold font-display text-slate-900 mb-4">GenAI Expertise — Core to Our Identity
+                </h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Enterprise-Grade AI Agents & Multimodal Systems</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- TenderCraft Assistant -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg shadow-slate-200/50 overflow-hidden border border-slate-100 flex flex-col">
+                    <div class="bg-gradient-to-r from-cyan-600 to-cyan-700 p-6 text-white">
+                        <div
+                            class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4 backdrop-blur-sm">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-1">TenderCraft Assistant</h3>
+                        <p class="text-cyan-100 text-sm">CogniChat AI (2025)</p>
+                    </div>
+                    <div class="p-8 flex-1">
+                        <p class="text-slate-600 mb-6 text-sm">A GenAI system built for end-to-end tender automation,
+                            transforming document-heavy processes.</p>
+                        <h4 class="font-bold text-slate-900 text-sm mb-3 uppercase tracking-wider">Key Contributions
+                        </h4>
+                        <ul class="space-y-3 text-sm text-slate-600">
+                            <li class="flex items-start"><span class="text-cyan-500 mr-2">•</span> Large tender document
+                                digestion</li>
+                            <li class="flex items-start"><span class="text-cyan-500 mr-2">•</span> Automatic requirement
+                                extraction</li>
+                            <li class="flex items-start"><span class="text-cyan-500 mr-2">•</span> Compliance matrix
+                                generation</li>
+                            <li class="flex items-start"><span class="text-cyan-500 mr-2">•</span> Orchestration logic
+                                for multi-step reasoning</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Kondor Assistant -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg shadow-slate-200/50 overflow-hidden border border-slate-100 flex flex-col">
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white">
+                        <div
+                            class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4 backdrop-blur-sm">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-1">Kondor Assistant</h3>
+                        <p class="text-blue-100 text-sm">Finastra (2024–2025)</p>
+                    </div>
+                    <div class="p-8 flex-1">
+                        <p class="text-slate-600 mb-6 text-sm">An enterprise AI system built for banking operations.
+                            Designed and technically led a multi-agent architecture powered by Azure OpenAI.</p>
+                        <h4 class="font-bold text-slate-900 text-sm mb-3 uppercase tracking-wider">Key Contributions
+                        </h4>
+                        <ul class="space-y-3 text-sm text-slate-600">
+                            <li class="flex items-start"><span class="text-blue-500 mr-2">•</span> Created General
+                                Orchestrator Agent</li>
+                            <li class="flex items-start"><span class="text-blue-500 mr-2">•</span> Built DB, Reports,
+                                and API Agents</li>
+                            <li class="flex items-start"><span class="text-blue-500 mr-2">•</span> Secure LLM inference
+                                pipelines</li>
+                            <li class="flex items-start"><span class="text-blue-500 mr-2">•</span> Integrated ChatGPT
+                                capabilities into enterprise systems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Endava R&D -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg shadow-slate-200/50 overflow-hidden border border-slate-100 flex flex-col">
+                    <div class="bg-gradient-to-r from-indigo-600 to-indigo-700 p-6 text-white">
+                        <div
+                            class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4 backdrop-blur-sm">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-1">Endava R&D</h3>
+                        <p class="text-indigo-100 text-sm">Automation (2021–2023)</p>
+                    </div>
+                    <div class="p-8 flex-1">
+                        <p class="text-slate-600 mb-6 text-sm">Early adoption of LLM systems, providing first-mover
+                            advantage and pre-ChatGPT credibility.</p>
+                        <h4 class="font-bold text-slate-900 text-sm mb-3 uppercase tracking-wider">Key Contributions
+                        </h4>
+                        <ul class="space-y-3 text-sm text-slate-600">
+                            <li class="flex items-start"><span class="text-indigo-500 mr-2">•</span> Integrated
+                                GPT-3/Davinci early</li>
+                            <li class="flex items-start"><span class="text-indigo-500 mr-2">•</span> RAG systems with
+                                pgvector</li>
+                            <li class="flex items-start"><span class="text-indigo-500 mr-2">•</span> LLM-powered DSL
+                                generators</li>
+                            <li class="flex items-start"><span class="text-indigo-500 mr-2">•</span> Scalable LLM API
+                                systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deployment & Cloud -->
+        <section class="bg-slate-50 py-12 border-y border-slate-200">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-2xl font-bold font-display text-slate-900 mb-8">AI System Deployment & Cloud Expertise
+                </h2>
+                <div class="flex flex-wrap justify-center gap-4 md:gap-8">
+                    <div
+                        class="px-6 py-3 bg-white rounded-full shadow-sm border border-slate-200 text-slate-700 font-medium flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z">
+                            </path>
+                        </svg>
+                        Azure OpenAI
+                    </div>
+                    <div
+                        class="px-6 py-3 bg-white rounded-full shadow-sm border border-slate-200 text-slate-700 font-medium flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01">
+                            </path>
+                        </svg>
+                        AWS (EKS, Lambda, S3)
+                    </div>
+                    <div
+                        class="px-6 py-3 bg-white rounded-full shadow-sm border border-slate-200 text-slate-700 font-medium flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                            </path>
+                        </svg>
+                        Docker & Kubernetes
+                    </div>
+                    <div
+                        class="px-6 py-3 bg-white rounded-full shadow-sm border border-slate-200 text-slate-700 font-medium flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                        Open-Source Models (Llama, etc.)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold font-display text-slate-900 mb-12 text-center">ULMY AI Today — What We Deliver
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Custom AI Agents</h3>
+                    <p class="text-slate-600 text-sm">Business process automation, Knowledge assistants, Multi-agent
+                        systems.</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Document Intelligence</h3>
+                    <p class="text-slate-600 text-sm">RFP/tender automation, Policy analysis, Contract extraction.</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Customer Support AI</h3>
+                    <p class="text-slate-600 text-sm">24/7 support, Knowledge-driven chatbots, API integrations.</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Speech & Multimodal</h3>
+                    <p class="text-slate-600 text-sm">Speech-to-text, Video/Image understanding, Voice-enabled agents.
+                    </p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-2">Transformation Framework</h3>
+                    <p class="text-slate-600 text-sm">Full discovery, roadmap, pilot, deployment, and change management.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="container mx-auto px-6 mb-16">
+            <div class="bg-slate-900 rounded-3xl p-8 md:p-12 text-white">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="flex-1">
+                        <h2 class="text-3xl font-bold font-display mb-6">Why Businesses Choose ULMY AI</h2>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-green-400 mr-3" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-lg">Real enterprise AI delivery experience</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-green-400 mr-3" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-lg">Proven multi-agent systems architect</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-green-400 mr-3" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-lg">Strong Python & cloud engineering background</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-green-400 mr-3" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-lg">Deep understanding of both tech and business process
+                                    automation</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-6 text-green-400 mr-3" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-lg">Ability to own the entire AI lifecycle, not just
+                                    development</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/3 text-center">
+                        <a href="contact.html"
+                            class="inline-block px-8 py-4 bg-white text-slate-900 font-bold rounded-full hover:bg-blue-50 transition shadow-lg">
+                            Partner With Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -152,10 +512,11 @@
                         <img src="logos/logo.svg" alt="ULMY AI Logo" class="w-8 h-8 grayscale opacity-70">
                         <span class="text-lg font-bold text-slate-200">ULMY AI S.R.L.</span>
                     </div>
-                    <p class="text-sm">Empowering CEOs with Generative AI Mastery.</p>
+                    <p class="text-sm">Building workplaces where people and AI agents thrive together.</p>
                 </div>
                 <div class="flex space-x-6 text-sm">
                     <a href="/" class="hover:text-white transition">Home</a>
+                    <a href="framework.html" class="hover:text-white transition">Framework</a>
                     <a href="about.html" class="hover:text-white transition">About</a>
                     <a href="contact.html" class="hover:text-white transition">Contact</a>
                     <a href="#" class="hover:text-white transition">Privacy</a>

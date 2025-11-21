@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End-to-End Framework | ULMY AI S.R.L.</title>
+    <meta name="description"
+        content="Managing the entire AI lifecycle — from discovery to implementation to ongoing support. A detailed breakdown of the AI Transformation Partner model.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="logos/logo.svg">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB',
+                        secondary: '#0F172A',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="flex items-center space-x-3 group">
+                    <img src="logos/logo.svg" alt="ULMY AI Logo" class="w-16 h-16 relative z-10">
+                    <span class="text-2xl font-bold font-display tracking-tight text-slate-900">ULMY AI</span>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Home</a>
+                    <a href="framework.html" class="text-sm font-medium text-blue-600">Framework</a>
+                    <a href="about.html"
+                        class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">About</a>
+                    <a href="contact.html"
+                        class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Contact</a>
+                    <a href="#"
+                        class="px-5 py-2.5 rounded-full bg-slate-900 text-white text-sm font-medium hover:bg-blue-600 transition shadow-lg shadow-blue-500/20">Login</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-slate-600 focus:outline-none" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white border-t border-slate-100" id="mobile-menu">
+            <div class="px-6 py-4 space-y-4 flex flex-col">
+                <a href="/" class="text-slate-600 font-medium">Home</a>
+                <a href="framework.html" class="text-blue-600 font-medium">Framework</a>
+                <a href="about.html" class="text-slate-600 font-medium">About</a>
+                <a href="contact.html" class="text-slate-600 font-medium">Contact</a>
+                <a href="#" class="text-slate-600 font-medium">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-12 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold font-display text-slate-900 mb-4 animate-fade-in-up">End-to-End
+                Framework</h1>
+            <p class="text-slate-500 max-w-2xl mx-auto animate-fade-in-up delay-100 text-lg">
+                Managing the entire AI lifecycle — from discovery to implementation to ongoing support.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-16">
+        <div class="container mx-auto px-6">
+
+            <!-- Diagram Section -->
+            <div
+                class="bg-slate-900 rounded-3xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-800 p-8">
+                <svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto font-sans">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="idealLoopGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+                            <feGaussianBlur stdDeviation="6" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                        <filter id="strongGlow" x="-40%" y="-40%" width="180%" height="180%">
+                            <feGaussianBlur stdDeviation="15" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                        <linearGradient id="indigoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.2" />
+                            <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0.2" />
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Background -->
+                    <rect width="1200" height="900" fill="url(#grad1)" />
+
+                    <!-- Grid Pattern -->
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.5" opacity="0.2" />
+                    </pattern>
+                    <rect width="1200" height="900" fill="url(#grid)" />
+
+                    <!-- Large Infinity Loop Container -->
+                    <!-- Scaled to fit the larger canvas while using the new shape -->
+                    <g transform="translate(600, 350) scale(1.5)">
+                        <!-- Outer Glow -->
+                        <path
+                            d="M 0 0 C 160 -160 400 -160 400 0 C 400 160 160 160 0 0 C -160 -160 -400 -160 -400 0 C -400 160 -160 160 0 0 Z"
+                            fill="none" stroke="url(#idealLoopGrad)" stroke-width="20" opacity="0.2"
+                            filter="url(#strongGlow)" />
+
+                        <!-- Main Loop -->
+                        <path
+                            d="M 0 0 C 160 -160 400 -160 400 0 C 400 160 160 160 0 0 C -160 -160 -400 -160 -400 0 C -400 160 -160 160 0 0 Z"
+                            fill="none" stroke="url(#idealLoopGrad)" stroke-width="8" filter="url(#glow)" />
+                    </g>
+
+                    <!-- Phase 1: Discovery (Inside Left Loop) -->
+                    <g transform="translate(145, 180)">
+                        <!-- Container -->
+                        <rect x="0" y="0" width="310" height="340" rx="20" fill="#1e293b" stroke="#3b82f6"
+                            stroke-width="1" opacity="0.95" />
+                        <path d="M 0 20 Q 0 0 20 0 L 290 0 Q 310 0 310 20 L 310 50 L 0 50 Z" fill="#2563eb"
+                            opacity="0.2" />
+                        <text x="155" y="35" text-anchor="middle" fill="#60a5fa" font-weight="bold" font-size="18"
+                            letter-spacing="1">1. DISCOVERY PHASE</text>
+
+                        <!-- Items -->
+                        <g transform="translate(25, 70)" fill="#e2e8f0" font-size="14">
+                            <g transform="translate(0, 0)">
+                                <path d="M4 6h16M4 10h16M4 14h16M4 18h16" stroke="#60a5fa" stroke-width="2" fill="none"
+                                    transform="scale(0.8) translate(0, 5)" />
+                                <rect x="0" y="0" width="24" height="24" fill="none" />
+                                <path d="M3 6l9-4 9 4v12l-9 4-9-4V6z" fill="none" stroke="#60a5fa" stroke-width="1.5"
+                                    transform="translate(0,2) scale(0.8)" />
+                                <text x="30" y="16">Business Understanding</text>
+                            </g>
+                            <g transform="translate(0, 35)">
+                                <path d="M4 4h6v6h-6z M14 4h6v6h-6z M9 14h6v6h-6z" fill="none" stroke="#60a5fa"
+                                    stroke-width="1.5" transform="translate(2,2) scale(0.8)" />
+                                <path d="M7 10v2h5 M17 10v2h-5 M12 12v2" fill="none" stroke="#60a5fa" stroke-width="1.5"
+                                    transform="translate(2,2) scale(0.8)" />
+                                <text x="30" y="16">Process Mapping</text>
+                            </g>
+                            <g transform="translate(0, 70)">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="#60a5fa"
+                                    stroke-width="1.5" transform="scale(0.8) translate(2,2)" />
+                                <text x="30" y="16">Risk & Feasibility</text>
+                            </g>
+                            <g transform="translate(0, 105)">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z" fill="none" stroke="#60a5fa" stroke-width="1.5"
+                                    transform="translate(0,2) scale(0.8)" />
+                                <path
+                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                                    fill="none" stroke="#60a5fa" stroke-width="1.5"
+                                    transform="translate(0,2) scale(0.8)" />
+                                <text x="30" y="16">Education & Alignment</text>
+                            </g>
+
+                            <!-- Deliverables -->
+                            <g transform="translate(-5, 150)">
+                                <rect width="270" height="100" rx="8" fill="#0f172a" stroke="#334155" />
+                                <text x="15" y="25" fill="#94a3b8" font-size="11" font-weight="bold"
+                                    letter-spacing="1">DELIVERABLES</text>
+                                <g transform="translate(15, 50)" font-size="12" fill="#cbd5e1">
+                                    <text y="0">• Roadmap & Strategy</text>
+                                    <text y="20">• Opportunity Matrix</text>
+                                    <text y="40">• Process Blueprints</text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+
+                    <!-- Phase 2: Implementation (Inside Right Loop) -->
+                    <g transform="translate(745, 180)">
+                        <!-- Container -->
+                        <rect x="0" y="0" width="310" height="340" rx="20" fill="#1e293b" stroke="#ec4899"
+                            stroke-width="1" opacity="0.95" />
+                        <path d="M 0 20 Q 0 0 20 0 L 290 0 Q 310 0 310 20 L 310 50 L 0 50 Z" fill="#db2777"
+                            opacity="0.2" />
+                        <text x="155" y="35" text-anchor="middle" fill="#f472b6" font-weight="bold" font-size="18"
+                            letter-spacing="1">2. IMPLEMENTATION</text>
+
+                        <!-- Items -->
+                        <g transform="translate(25, 70)" fill="#e2e8f0" font-size="14">
+                            <g transform="translate(0, 0)">
+                                <path
+                                    d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+                                    fill="none" stroke="#f472b6" stroke-width="1.5"
+                                    transform="scale(0.7) translate(2,2)" />
+                                <text x="30" y="16">Solution Design</text>
+                            </g>
+                            <g transform="translate(0, 35)">
+                                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" fill="none" stroke="#f472b6"
+                                    stroke-width="1.5" transform="scale(0.7) translate(2,2)" />
+                                <text x="30" y="16">AI System Dev</text>
+                            </g>
+                            <g transform="translate(0, 70)">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" fill="none" stroke="#f472b6"
+                                    stroke-width="1.5" transform="scale(0.7) translate(2,2)" />
+                                <text x="30" y="16">Testing & Validation</text>
+                            </g>
+                            <g transform="translate(0, 105)">
+                                <path d="M13 10V3L4 14h7v7l9-11h-7z" fill="none" stroke="#f472b6" stroke-width="1.5"
+                                    transform="scale(0.7) translate(2,2)" />
+                                <text x="30" y="16">Deployment & Adoption</text>
+                            </g>
+
+                            <!-- Deliverables -->
+                            <g transform="translate(-5, 150)">
+                                <rect width="270" height="100" rx="8" fill="#0f172a" stroke="#334155" />
+                                <text x="15" y="25" fill="#94a3b8" font-size="11" font-weight="bold"
+                                    letter-spacing="1">DELIVERABLES</text>
+                                <g transform="translate(15, 50)" font-size="12" fill="#cbd5e1">
+                                    <text y="0">• Live AI Systems</text>
+                                    <text y="20">• Integrated SOPs</text>
+                                    <text y="40">• Team Training</text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+
+                    <!-- Central Hub -->
+                    <g transform="translate(600, 350)">
+                        <circle cx="0" cy="0" r="70" fill="#0f172a" stroke="#8b5cf6" stroke-width="2"
+                            filter="url(#glow)" opacity="1" />
+                        <text x="0" y="-5" text-anchor="middle" fill="#ffffff" font-weight="bold" font-size="20"
+                            font-family="Outfit, sans-serif" letter-spacing="1">ULMY AI</text>
+                        <text x="0" y="15" text-anchor="middle" fill="#94a3b8" font-size="10"
+                            font-weight="500">TRANSFORMATION</text>
+                        <text x="0" y="28" text-anchor="middle" fill="#94a3b8" font-size="10"
+                            font-weight="500">PARTNER</text>
+                    </g>
+
+                    <!-- Phase 3: Support (Bottom Foundation) -->
+                    <g transform="translate(200, 680)">
+                        <!-- Connecting Lines -->
+                        <path d="M 250 -100 L 400 0" fill="none" stroke="#8b5cf6" stroke-width="2"
+                            stroke-dasharray="5,5" opacity="0.5" />
+                        <path d="M 550 -100 L 400 0" fill="none" stroke="#8b5cf6" stroke-width="2"
+                            stroke-dasharray="5,5" opacity="0.5" />
+
+                        <!-- Container -->
+                        <rect x="0" y="0" width="800" height="180" rx="20" fill="#1e293b" stroke="#8b5cf6"
+                            stroke-width="1" opacity="0.95" />
+                        <rect x="0" y="0" width="800" height="40" rx="20" fill="url(#indigoGrad)" />
+                        <text x="400" y="28" text-anchor="middle" fill="white" font-weight="bold" font-size="18"
+                            letter-spacing="1">3. ONGOING SUPPORT & PARTNERSHIP</text>
+
+                        <!-- Content Grid -->
+                        <g transform="translate(40, 60)" fill="#e2e8f0" font-size="14">
+                            <!-- Column 1 -->
+                            <g transform="translate(0, 0)">
+                                <path
+                                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                                    fill="none" stroke="#818cf8" stroke-width="1.5"
+                                    transform="scale(0.7) translate(2,2)" />
+                                <text x="30" y="15">Continuous Optimization</text>
+                            </g>
+                            <g transform="translate(0, 40)">
+                                <path
+                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                                    fill="none" stroke="#818cf8" stroke-width="1.5"
+                                    transform="scale(0.7) translate(2,2)" />
+                                <text x="30" y="15">Strategic Advisory</text>
+                            </g>
+
+                            <!-- Column 2 -->
+                            <g transform="translate(250, 0)">
+                                <path
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                                    fill="none" stroke="#818cf8" stroke-width="1.5"
+                                    transform="scale(0.7) translate(2,2)" />
+                                <text x="30" y="15">Measurement & ROI</text>
+                            </g>
+                            <g transform="translate(250, 40)">
+                                <path
+                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                                    fill="none" stroke="#818cf8" stroke-width="1.5"
+                                    transform="scale(0.7) translate(2,2)" />
+                                <text x="30" y="15">Governance & Compliance</text>
+                            </g>
+
+                            <!-- Deliverables (Right Side) -->
+                            <g transform="translate(500, -10)">
+                                <rect width="220" height="100" rx="8" fill="#0f172a" stroke="#334155" />
+                                <text x="15" y="25" fill="#94a3b8" font-size="11" font-weight="bold"
+                                    letter-spacing="1">DELIVERABLES</text>
+                                <g transform="translate(15, 50)" font-size="12" fill="#cbd5e1">
+                                    <text y="0">• Optimization Reports</text>
+                                    <text y="20">• New Opportunity Maps</text>
+                                    <text y="40">• System Updates</text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+
+                </svg>
+            </div>
+            <p class="text-center text-slate-500 mt-12 italic mb-24 max-w-3xl mx-auto">
+                An AI Transformation Partner must be able to guide an organization through every phase required to
+                adopt AI effectively. Not one piece. Not one project. The entire system of change.
+            </p>
+        </div>
+
+        <!-- Phase 1: Discovery -->
+        <div class="max-w-4xl mx-auto mb-20">
+            <div class="flex items-center mb-8">
+                <div
+                    class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-6 shadow-lg shadow-blue-600/30">
+                    1</div>
+                <h2 class="text-3xl font-bold font-display text-slate-900">Discovery Phase</h2>
+            </div>
+            <p class="text-xl text-slate-600 mb-8 font-medium border-l-4 border-blue-600 pl-6 italic ml-[4.5rem]">
+                Understand the organization before proposing solutions.
+            </p>
+
+            <div class="space-y-12">
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">1.1. Business Understanding</h3>
+                    <ul class="list-disc list-inside text-slate-600 space-y-2">
+                        <li>Identify value engines: where money is made or lost</li>
+                        <li>Map strategic priorities: speed, cost reduction, differentiation</li>
+                        <li>Assess AI readiness: data maturity, workflow structure, org alignment</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">1.2. Process Mapping (High-Resolution)</h3>
+                    <p class="text-slate-600 mb-4">This is the most important activity in discovery. We run
+                        structured interviews with leadership, ops leads, and frontline teams to create:</p>
+                    <ul class="list-disc list-inside text-slate-600 space-y-2">
+                        <li>A process inventory</li>
+                        <li>A strategic AI opportunity map</li>
+                        <li>Clear bottlenecks where automation creates leverage</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">1.3. Risk & Feasibility Assessment</h3>
+                    <p class="text-slate-600">For every opportunity, we assess impact, difficulty, risk (data,
+                        compliance), and dependencies.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">1.4. Education & Alignment Workshop</h3>
+                    <p class="text-slate-600">We run a top-down workshop explaining how AI works in your context,
+                        dispelling hype, and presenting your personalized roadmap. This builds the shared mental
+                        model required for adoption.</p>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-2xl border border-blue-100">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4">1.5. Deliverables</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex items-center text-blue-800"><svg class="w-5 h-5 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7">
+                                </path>
+                            </svg> AI Transformation Roadmap</div>
+                        <div class="flex items-center text-blue-800"><svg class="w-5 h-5 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7">
+                                </path>
+                            </svg> Opportunity Matrix</div>
+                        <div class="flex items-center text-blue-800"><svg class="w-5 h-5 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7">
+                                </path>
+                            </svg> Process Blueprints</div>
+                        <div class="flex items-center text-blue-800"><svg class="w-5 h-5 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7">
+                                </path>
+                            </svg> Risk/Governance Recommendations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Phase 2: Implementation -->
+        <div class="max-w-4xl mx-auto mb-20">
+            <div class="flex items-center mb-8">
+                <div
+                    class="w-12 h-12 bg-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-6 shadow-lg shadow-cyan-600/30">
+                    2</div>
+                <h2 class="text-3xl font-bold font-display text-slate-900">Implementation Phase</h2>
+            </div>
+            <p class="text-xl text-slate-600 mb-8 font-medium border-l-4 border-cyan-600 pl-6 italic ml-[4.5rem]">
+                Build the systems that execute the strategy.
+            </p>
+
+            <div class="space-y-12">
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">2.1. Solution Design</h3>
+                    <p class="text-slate-600">For each opportunity: Requirements, workflow design, model/agent
+                        selection, integration plan, and success metrics (KPIs).</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">2.2. AI System Development</h3>
+                    <p class="text-slate-600 mb-4">We develop the operational layer of AI, including:</p>
+                    <ul class="list-disc list-inside text-slate-600 space-y-2">
+                        <li>Agentic workflows & Internal AI copilots</li>
+                        <li>RAG systems (File search / embeddings)</li>
+                        <li>Process orchestration agents</li>
+                        <li>CRM/ERP integrations & Data pipelines</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">2.3. Testing & Validation</h3>
+                    <p class="text-slate-600">We test accuracy, reliability, workflow resilience, failure modes, and
+                        compliance rules to ensure real-world adoption.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">2.4. Deployment & Adoption</h3>
+                    <p class="text-slate-600">This stage is about people. We run pilot programs, shadow testing,
+                        training sessions, and rewrite SOPs to be AI-integrated.</p>
+                </div>
+
+                <div class="bg-cyan-50 p-8 rounded-2xl border border-cyan-100">
+                    <h3 class="text-xl font-bold text-cyan-900 mb-4">2.5. Deliverables</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex items-center text-cyan-800"><svg class="w-5 h-5 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Live AI systems</div>
+                        <div class="flex items-center text-cyan-800"><svg class="w-5 h-5 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Documentation + SOPs</div>
+                        <div class="flex items-center text-cyan-800"><svg class="w-5 h-5 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Internal training</div>
+                        <div class="flex items-center text-cyan-800"><svg class="w-5 h-5 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Performance metrics</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 3: Support -->
+        <div class="max-w-4xl mx-auto mb-20">
+            <div class="flex items-center mb-8">
+                <div
+                    class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-6 shadow-lg shadow-indigo-600/30">
+                    3</div>
+                <h2 class="text-3xl font-bold font-display text-slate-900">Ongoing Support Phase</h2>
+            </div>
+            <p class="text-xl text-slate-600 mb-8 font-medium border-l-4 border-indigo-600 pl-6 italic ml-[4.5rem]">
+                AI is not a one-time project — it’s a capability that needs ongoing stewardship.
+            </p>
+
+            <div class="space-y-12">
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">3.1. Continuous Optimization</h3>
+                    <p class="text-slate-600">Quarterly or monthly system audits, model updates, prompt refinement,
+                        and workflow optimization to prevent entropy.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">3.2. Strategic Advisory</h3>
+                    <p class="text-slate-600">Quarterly planning, new opportunity identification, and market
+                        analysis to keep leadership ahead of the curve.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">3.3. Measurement & Governance</h3>
+                    <p class="text-slate-600">We track ROI, time saved, and adoption metrics while ensuring
+                        security, compliance, and auditability.</p>
+                </div>
+
+                <div class="bg-indigo-50 p-8 rounded-2xl border border-indigo-100">
+                    <h3 class="text-xl font-bold text-indigo-900 mb-4">3.6. Deliverables</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex items-center text-indigo-800"><svg class="w-5 h-5 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Quarterly Optimization Reports</div>
+                        <div class="flex items-center text-indigo-800"><svg class="w-5 h-5 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> New Opportunity Maps</div>
+                        <div class="flex items-center text-indigo-800"><svg class="w-5 h-5 mr-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Updated SOPs & Agent Logic</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="max-w-4xl mx-auto text-center bg-slate-900 rounded-3xl p-12 text-white">
+            <h2 class="text-3xl font-bold font-display mb-6">The Big Picture</h2>
+            <p class="text-lg text-slate-300 mb-8">
+                True end-to-end AI transformation means helping the organization understand itself, build
+                strategically aligned systems, and scale with AI. This model creates larger deals, higher trust, and
+                defensible service offerings.
+            </p>
+            <a href="contact.html"
+                class="inline-block px-8 py-4 bg-white text-slate-900 font-bold rounded-full hover:bg-blue-50 transition shadow-lg">
+                Partner With Us
+            </a>
+        </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="logos/logo.svg" alt="ULMY AI Logo" class="w-8 h-8 grayscale opacity-70">
+                        <span class="text-lg font-bold text-slate-200">ULMY AI S.R.L.</span>
+                    </div>
+                    <p class="text-sm">Building workplaces where people and AI thrive together.</p>
+                </div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="/" class="hover:text-white transition">Home</a>
+                    <a href="framework.html" class="hover:text-white transition">Framework</a>
+                    <a href="about.html" class="hover:text-white transition">About</a>
+                    <a href="contact.html" class="hover:text-white transition">Contact</a>
+                    <a href="#" class="hover:text-white transition">Privacy</a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-slate-800 text-center text-xs">
+                &copy; <span id="year"></span> ULMY AI S.R.L. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
